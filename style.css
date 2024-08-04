@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  width: 20%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 10px 0 10px 0;
+}
+
+.message {
+  display: flex;
+  margin: 10px 0 10px 0;
+  font-size: x-large;
+  align-content: center;
+  justify-content: center;
+}
+
+#error {
+  color: red;
+  margin: 1rem;
+}

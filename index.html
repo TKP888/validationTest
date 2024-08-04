@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      .error-message {
+        color: red;
+        font-size: 0.8em;
+        display: block;
+      }
+      .input-error {
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">Please fill out the form below:</div>
+    <div class="container">
+      <form novalidate id="form">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" autocomplete="email" />
+        <span id="email-error" class="error-message"></span>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" autocomplete="country" />
+        <span id="country-error" class="error-message"></span>
+
+        <label for="postcode">Postcode</label>
+        <input type="text" name="postcode" id="postcode" />
+        <span id="postcode-error" class="error-message"></span>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <span id="password-error" class="error-message"></span>
+
+        <label for="passwordconfirm">Confirm Password</label>
+        <input type="password" name="passwordconfirm" id="passwordconfirm" />
+        <span id="passwordconfirm-error" class="error-message"></span>
+
+        <button type="submit" name="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
